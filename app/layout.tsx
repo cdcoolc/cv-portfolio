@@ -3,6 +3,7 @@ import '../styles/base.css';
 import '../styles/globals.css';
 import type { Metadata, Viewport } from 'next';
 import PageTransition from '../components/PageTransition';
+import ScrollManager from '../components/ScrollManager';
 import Script from 'next/script';
 import { Poppins } from 'next/font/google';
 
@@ -96,6 +97,7 @@ export default function RootLayout({
             url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
           })}
         </Script>
+        <ScrollManager />
         <PageTransition>{children}</PageTransition>
       </body>
     </html>

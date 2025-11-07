@@ -3,19 +3,13 @@
 @tailwind utilities;
 
 :root {
-  --color-bg: #021f16;
-  --color-surface: rgba(255, 255, 255, 0.06);
+  --color-bg: var(--color-background);
+  --color-surface: var(--surface-raised);
   --color-text: var(--color-text-primary);
   --color-muted: var(--color-text-muted);
   --gradient-primary: var(--color-background);
-  --font-primary: var(--font-family-primary, 'Poppins', sans-serif);
-  --font-heading: var(--font-family-primary, 'Poppins', sans-serif);
-  --space-4: 1rem;
-  --space-5: 1.25rem;
-  --space-6: 1.5rem;
-  --space-8: 2rem;
-  --space-10: 2.5rem;
-  --space-12: 3rem;
+  --font-primary: var(--font-sans);
+  --font-heading: var(--font-sans);
 }
 
 *,
@@ -25,36 +19,39 @@
 }
 
 body {
-  background: var(--color-background);
+  background: var(--color-bg);
   color: var(--color-text);
   font-family: var(--font-primary);
-  line-height: 1.6;
+  line-height: var(--lh-body);
 }
 
 .container-main {
   width: 100%;
-  max-width: 1180px;
+  max-width: var(--container-max);
   margin-inline: auto;
-  padding-inline: clamp(1.25rem, 4vw, 3rem);
+  padding-inline: var(--gutter);
 }
 
 .container-section {
-  padding-block: clamp(2.5rem, 6vw, 4rem);
+  padding-block: var(--section-gap);
 }
 
 .canvas {
-  min-height: 100vh;
+  width: 100%;
+  min-height: calc(100svh - var(--header-h) - var(--footer-h));
   display: flex;
-  align-items: center;
-  padding-block: clamp(3rem, 8vw, 6rem);
+  align-items: flex-start;
+  justify-content: center;
+  padding-block: var(--page-pad-y);
+  padding-inline: var(--gutter);
 }
 
 .hero-card {
   position: relative;
-  width: min(1120px, calc(100% - 1.5rem));
+  width: min(1120px, calc(100% - var(--space-6)));
   margin: 0 auto;
-  padding: clamp(1.5rem, 5vw, 4rem);
-  border-radius: 36px;
+  padding: clamp(var(--space-6), 5vw, var(--space-16));
+  border-radius: var(--radius-card, 36px);
   background: linear-gradient(165deg, #04945f 0%, #17c58f 60%, #10a86f 100%);
   box-shadow: 0 50px 120px rgba(0, 0, 0, 0.35);
   overflow: hidden;
@@ -84,9 +81,9 @@ body {
   position: relative;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: clamp(2rem, 5vw, 4rem);
+  gap: clamp(var(--space-6), 5vw, var(--space-12));
   align-items: center;
-  margin-top: clamp(1.5rem, 4vw, 3rem);
+  margin-top: var(--block-gap);
 }
 
 .hero-card__content {
@@ -132,10 +129,10 @@ body {
 }
 
 .hero-card__cta {
-  margin-top: 1.75rem;
+  margin-top: var(--space-6);
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: var(--space-4);
   flex-wrap: wrap;
 }
 
@@ -159,7 +156,7 @@ body {
 .hero-card__footer {
   position: relative;
   z-index: 2;
-  margin-top: clamp(2.5rem, 6vw, 3.5rem);
+  margin-top: clamp(var(--space-10), 6vw, var(--space-12));
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -179,18 +176,18 @@ body {
 
 .hero-card--section {
   overflow: hidden;
-  border-radius: 36px;
+  border-radius: var(--radius-card, 36px);
 }
 
 .hero-card__section {
-  margin-top: clamp(1.5rem, 4vw, 3rem);
+  margin-top: var(--block-gap);
   display: flex;
   flex-direction: column;
-  gap: clamp(1.5rem, 4vw, 2.5rem);
+  gap: var(--block-gap);
 }
 
 .hero-card__section-indicator {
-  margin-top: clamp(1rem, 3vw, 2rem);
+  margin-top: var(--space-6);
   display: flex;
   justify-content: flex-end;
 }
@@ -341,22 +338,22 @@ body {
 .skills-layout {
   display: flex;
   align-items: flex-start;
-  gap: clamp(1.5rem, 4vw, 3rem);
+  gap: clamp(var(--space-6), 4vw, var(--space-12));
   flex-wrap: wrap;
 }
 
 .skills-tabs {
   display: flex;
   flex-direction: column;
-  gap: 0.75rem;
+  gap: var(--space-3);
   min-width: 200px;
   flex: 0 0 220px;
 }
 
 .skills-tab {
   text-align: left;
-  padding: 0.85rem 1.1rem;
-  border-radius: 18px;
+  padding: var(--space-3) var(--space-4);
+  border-radius: var(--radius-md);
   border: 1px solid rgba(255, 255, 255, 0.15);
   background: transparent;
   color: rgba(255, 255, 255, 0.75);
@@ -372,7 +369,7 @@ body {
 
 .skills-tab__hint {
   display: block;
-  margin-top: 0.35rem;
+  margin-top: var(--space-2);
   font-size: 0.8rem;
   letter-spacing: 0.02em;
   color: rgba(255, 255, 255, 0.55);
@@ -396,7 +393,7 @@ body {
   flex: 1 1 0%;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: var(--block-gap);
 }
 
 .skills-content__summary {
@@ -409,13 +406,13 @@ body {
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.25rem 1.5rem;
+  gap: var(--space-5) var(--space-6);
 }
 
 .skills-item {
   display: flex;
-  gap: 0.85rem;
-  padding-bottom: 0.75rem;
+  gap: var(--space-3);
+  padding-bottom: var(--space-3);
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -438,7 +435,7 @@ body {
 }
 
 .skills-item p {
-  margin-top: 0.25rem;
+  margin-top: var(--space-1);
   font-size: 0.85rem;
   color: rgba(255, 255, 255, 0.7);
 }
@@ -446,6 +443,9 @@ body {
 .site-header {
   position: relative;
   z-index: 3;
+  min-height: var(--header-h);
+  display: flex;
+  align-items: center;
 }
 
 .site-header__inner {
@@ -453,13 +453,13 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: var(--space-6);
 }
 
 .site-header__inner--default {
-  width: min(1120px, calc(100% - 2rem));
+  width: min(var(--container-max), calc(100% - var(--space-8)));
   margin: 0 auto;
-  padding-inline: clamp(1rem, 4vw, 2rem);
+  padding-inline: var(--gutter);
 }
 
 .site-header__logo {
@@ -597,10 +597,10 @@ body {
 }
 
 .section-card {
-  background: rgba(255, 255, 255, 0.05);
-  border-radius: 28px;
-  padding: clamp(1.5rem, 4vw, 3rem);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: var(--surface-raised);
+  border-radius: var(--radius-card, 28px);
+  padding: clamp(var(--space-6), 4vw, var(--space-12));
+  border: 1px solid var(--surface-border);
   box-shadow: 0 25px 80px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
 }
@@ -610,7 +610,7 @@ body {
 }
 
 .section-plain {
-  padding: clamp(1.5rem, 4vw, 3rem);
+  padding: clamp(var(--space-6), 4vw, var(--space-12));
 }
 
 .section-plain header {
@@ -618,9 +618,9 @@ body {
 }
 
 .card-surface {
-  background: rgba(255, 255, 255, 0.08);
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 24px;
+  background: var(--surface-raised);
+  border: 1px solid var(--surface-border);
+  border-radius: var(--radius-md, 24px);
   box-shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
 }
 
@@ -688,5 +688,14 @@ body {
 
   .skills-tab {
     flex: 1 1 140px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0s !important;
   }
 }

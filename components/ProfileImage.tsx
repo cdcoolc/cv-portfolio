@@ -11,7 +11,7 @@ export interface ProfileImageProps {
 }
 
 export default function ProfileImage({
-  src,
+  src = '/assets/profile/profile.png',
   alt = 'Profile image',
   size = 256,
   priority = false,

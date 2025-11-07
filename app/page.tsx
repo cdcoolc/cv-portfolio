@@ -8,13 +8,17 @@ import { FadeIn, Stagger } from '../components/anim';
 export default function Page() {
   return (
     <main id="main" className="canvas">
-      <section className="hero-card" aria-label="Hero">
+  <section className="hero-card mt-20 md:mt-24 lg:mt-32" aria-label="Hero">
         <Header variant="card" />
         <div className="hero-card__grid">
           <div className="hero-card__content">
             <Stagger>
               <p className="hero-card__eyebrow">Financial Reporting &amp; FP&amp;A</p>
-              <h1 className="hero-card__title">Masih Azizpour</h1>
+              <h1 className="hero-card__title">
+                Masih
+                <br />
+                Azizpour
+              </h1>
               <p className="hero-card__subtitle">I&apos;m a Finance Partner</p>
               <p className="hero-card__description">
                 I help leadership teams translate raw data into confident, forward-looking decisions. Forecasting,

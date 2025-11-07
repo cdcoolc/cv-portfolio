@@ -1,6 +1,6 @@
-"use client";
+'use client';
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 
 export function FadeIn({
   children,
@@ -13,13 +13,18 @@ export function FadeIn({
   y?: number;
   className?: string;
 }) {
+  const prefersReducedMotion = useReducedMotion();
+  const initial = prefersReducedMotion ? { opacity: 1, y: 0 } : { opacity: 0, y };
+  const animate = { opacity: 1, y: 0 };
+  const transition = prefersReducedMotion ? { duration: 0 } : { duration: 0.4, delay };
+
   return (
     <motion.div
       className={className}
-      initial={{ opacity: 0, y }}
-      whileInView={{ opacity: 1, y: 0 }}
+      initial={initial}
+      whileInView={animate}
       viewport={{ once: true, margin: '0px 0px -80px 0px' }}
-      transition={{ duration: 0.4, delay }}
+      transition={transition}
     >
       {children}
     </motion.div>
@@ -36,4 +41,3 @@ export function Stagger({ children, delayStep = 0.08, className }: { children: R
     </div>
   );
 }
-
