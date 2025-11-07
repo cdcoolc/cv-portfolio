@@ -1,0 +1,241 @@
+===== FILE: Financial Planning and Analysis Specialist II.pdf =====
+
+
+MASIH AZIZPOUR 
+     (904) 993-9351 | masih.azizpour@gmail.com | Jacksonville, FL  
+FINANCIAL REPORTING & FP&A PROFESSIONAL — Leveraging Analytics and Financial Acumen for Strategic Insights 
+Financial Reporting and Analysis professional with over 7 years of experience in financial planning, cash flow forecasting, and cross-functional 
+business coordination. Skilled in IFRS/GAAP-compliant reporting, Sales & Use Tax compliance, and asset management with proven ability to 
+adapt to complex regulatory environments. Advanced in Power BI, Alteryx, Oracle ERP, SAP, and SQL to enhance reporting accuracy, timeliness, 
+and automation. Demonstrated expertise in inventory/fixed asset reconciliation, equipment asset management, and strategic financial 
+reporting. Entrepreneurial mindset with strong business ownership experience and a track record of driving process improvement. 
+CORE COMPETENCIES 
+• Financial Planning & Cash Flow Forecasting • IFRS/GAAP Reporting • Sales & Use Tax Compliance • Variance Analysis & Trend Identification 
+• Inventory & Fixed Asset Reconciliation • ERP Systems (Oracle, SAP) • Equipment Asset Management & Valuation 
+• Lease Financing & Portfolio Management • Process Optimization & Workflow Automation • Regulatory Compliance 
+• Power BI Dashboard Development • Alteryx Workflow Automation • Cross-Functional Collaboration (Finance, Legal, Sales, Tax) 
+PROFESSIONAL EXPERIENCE 
+FIS (Fidelity Information Services) 
+Financial Reporting Analyst II – Jacksonville, FL 2022 – 2025 
+• Collaborated with treasury and FP&A teams on financial planning and cash flow forecasting, ensuring compliance with IFRS/GAAP 
+standards to support liquidity management and strategic decisions. 
+• Performed variance analysis and trend identification on forecasts vs. actuals, identifying risks and opportunities that improved forecast 
+accuracy and informed management reporting. 
+• Automated forecasting workflows using Alteryx and SQL, reducing manual effort by 40% and enhancing data integrity through standardized 
+validation. 
+• Developed Oracle and SAP reporting templates to ensure financial accuracy and regulatory compliance across business units. 
+• Designed Power BI dashboards providing real-time visibility into cash flow and accounts payable, enabling faster decision-making and 
+efficiency gains. 
+• Prepared financial reports for management, driving continuous improvement in reporting processes and reducing cycle time by 30%. 
+CIT Bank N.A. 
+End of Lease Specialist III – Jacksonville, FL 2017 – 2022 
+• Managed equipment lease portfolio operations for $100M+ in technology and earth-moving assets, coordinating with sales, finance, tax, 
+and legal teams to optimize lease renewals and structure. 
+• Conducted portfolio cash flow and asset valuation analyses, achieving 110% of quarterly performance targets through strategic pricing and 
+market insights. 
+• Coordinated lease financing transactions across multiple states, ensuring Sales & Use Tax compliance and regulatory accuracy for 
+equipment deliveries. 
+• Performed inventory reconciliation and fixed asset tracking with 99.8% accuracy, strengthening reporting integrity and compliance. 
+• Partnered with sales teams to execute above-market asset sales, providing financial analysis and valuation guidance. 
+• Supported ERP system implementation with testing and financial process feedback, improving cross-functional data accuracy. 
+EDUCATION & BUSINESS EXPERIENCE 
+University of North Florida, Coggin College of Business 
+Bachelor of Business Administration – Dual Bachelors: Finance and Financial Services | Jacksonville, FL 
+Business Owner & Operator  2014 – 2024 
+Led strategic planning, financial management, and budgeting for independent business operations. 
+Oversaw cash flow forecasting, variance analysis, and compliance processes to ensure sustained profitability and efficiency. 
+TECHNICAL SKILLS 
+• Advanced: Power BI (Financial dashboards), Alteryx (Certified workflow automation), Excel (Financial modeling), IFRS/GAAP Reporting 
+• Proficient: SQL (Financial data analysis), Oracle ERP, SAP Financials, Asset/Inventory Reconciliation, Sales & Use Tax Compliance 
+• Familiar: Python (Financial data analysis), Cloud-Based Financial Infrastructure, Process Improvement Methodologies 
+
+===== FILE: Masih Azizpour - Business Intelligence Analyst.pdf =====
+
+
+MASIH AZIZPOUR 
+     (904) 993-9351 | masih.azizpour@gmail.com | Jacksonville, FL  
+BUSINESS INTELLIGENCE ANALYST – Leveraging financial expertise and data analytics for strategic decision-making 
+Financial Analyst with over 7 years of experience in business intelligence, data analytics, and financial reporting automation. Skilled in 
+leveraging Power BI, SQL, and Alteryx to transform financial data into actionable insights. Known for optimizing reporting processes, 
+collaborating with cross-functional teams, and supporting strategic decision-making through data visualization. Excellent communication skills 
+with proven ability to translate complex financial data into business intelligence solutions. 
+PROFESSIONAL SUMMARY 
+• Skilled in developing Power BI dashboards and reports using DAX functions to support financial analysis and strategic objectives 
+• Experienced in collaborating with business stakeholders to gather requirements and deliver tailored analytics solutions 
+• Proven track record automating financial workflows and reporting processes using SQL, Alteryx, and Excel for data transformation 
+• Adept at working independently in remote environments while managing multiple reporting priorities 
+• Strong background in financial data analysis with expertise in accounts payable, cash flow, and variance reporting 
+• Healthcare equipment finance experience supporting life sciences and biotech client relationships 
+CORE COMPETENCIES 
+Power BI Dashboard Development & DAX 
+Cross-Functional Team Collaboration 
+SQL Query Development & Optimization 
+Self-Directed Project Management 
+Financial Data Analysis & Reporting 
+Alteryx Workflow Automation 
+Business Intelligence Solutions 
+Data Governance & Quality Assurance 
+Requirements Gathering & Analysis 
+Strategic Decision Support 
+Process Improvement & Optimization 
+Healthcare Equipment Finance Analytics 
+PROFESSIONAL EXPERIENCE 
+FIS (Fidelity Information Services) 
+Financial Reporting Analyst II Jacksonville, FL | 2022 - 2025 
+• Designed Power BI dashboards using DAX functions to analyze AP trends, reducing manual reporting by 40% and providing real-time 
+financial visibility for executives. 
+• Collaborated with Product Owners and Tribe Leads to gather requirements and develop monthly analytics packages covering AP activity, 
+cash flow, and expense analysis. 
+• Partnered with finance, engineering, and IT teams to integrate data sources, enhancing financial data completeness and supporting $2M 
+strategic budget decisions. 
+• Automated AP data workflows using Alteryx and SQL, cutting processing time by 50% while improving monthly reporting accuracy. 
+• Created custom Power BI reports and Excel dashboards for AP forecasting, variance analysis, and accrual tracking in month-end processes. 
+• Streamlined reporting processes with modular Alteryx workflows in cloud environments, increasing operational efficiency by 30%. 
+CIT Bank N.A 
+End of Lease Specialist III Jacksonville, FL | 2017 - 2022 
+• Collaborated with sales teams analyzing customer usage data and financial metrics, contributing to lease renewals with 110% quarterly 
+attainment through data-driven insights. 
+• Analyzed financial performance of $100M+ healthcare equipment lease portfolio, supporting decisions that achieved 95% client retention 
+rate. 
+• Led process improvement initiatives resolving service backlogs, reducing resolution time by 25% through enhanced workflow coordination 
+and data analysis. 
+• Performed financial reconciliation and cash receipt analysis using Excel and database queries, maintaining 99.8% transaction accuracy. 
+• Conducted financial research and portfolio analysis for healthcare equipment leases, supporting strategic decisions for life sciences and 
+biotech clients. 
+EDUCATION 
+University of North Florida, Coggin College of Business 
+Bachelor of Business Administration Dual Bachelors: Finance and Financial Services Jacksonville, FL 
+TECHNICAL SKILLS 
+• Advanced (Expert Level): Power BI (Dashboard creation and DAX functions), Microsoft Excel (Advanced financial modeling and analysis), 
+Financial Reporting Systems, Alteryx (Certified workflow automation) 
+• Proficient (Strong Working Knowledge): SQL (Data querying and financial analysis), Oracle OTBI (Financial reporting and automation), 
+Hyperion (Financial consolidation), Data Extraction & Transformation 
+• Familiar (Working Knowledge): Python (Basic data analysis), Snowflake (Cloud data platforms), Tableau (Data visualization), Business 
+Intelligence Applications 
+
+===== FILE: Resume2025 Investment Reporting Analyst.pdf =====
+
+
+MASIH AZIZPOUR 
+     (904) 993-9351 | masih.azizpour@gmail.com | Jacksonville, FL 
+INVESTMENT REPORTING & ANALYSIS – Portfolio Operations | Reconciliation | Financial Reporting 
+Detail-oriented financial analyst with 7+ years of experience in investment reporting, cash monitoring, reconciliations, and financial 
+analytics. Adept at preparing audit-ready reports, managing investment data pipelines, and supporting cross-functional finance teams. 
+Known for high accuracy, strong data integrity practices, and a collaborative approach to solving complex reporting challenges. Comfortable 
+working with evolving systems, deadlines, and business needs. 
+PROFESSIONAL SUMMARY 
+• Experienced in preparing and distributing monthly/quarterly reports for internal leadership and external auditors   
+• Skilled in reconciling investment activity across multiple systems with a strong focus on data integrity and validation   
+• Proficient in tracking daily cash positions and ensuring alignment with portfolio transactions and liquidity requirements   
+• Collaborative team member with strong analytical thinking and a hands-on approach to process improvement   
+• Advanced Excel and SQL user with automation experience in Alteryx, driving faster turnaround and fewer manual errors   
+• Familiar with investment accounting principles including fair value adjustments, accruals, and amortization schedules   
+• Adept at supporting audit processes through timely documentation, reconciliation schedules, and issue resolution  
+CORE COMPETENCIES 
+• Investment & Financial Reporting   
+• Cash Flow & Liquidity Tracking   
+• Data Reconciliation & Validation   
+• Audit & External Reporting Support   
+• SQL & Alteryx Workflow Automation   
+• Excel (Pivots, VLOOKUPs, Formulas)   
+• Ad Hoc Reporting & Analysis   
+• Clearwater/PAM System Familiarity   
+• Process Improvement & Optimization   
+• Cross Departmental Collaboration   
+• Attention to Detail & Accuracy   
+• Deadline-Driven Execution   
+PROFESSIONAL EXPERIENCE 
+FIS (Fidelity Information Services)   
+Financial Reporting Analyst II  Jacksonville, FL | 2022 – 2025   
+• Prepared and distributed monthly analytics packages used by senior leaders to assess AP cash flow trends, vendor exposure, and 
+investment impact   
+• Reconciled AP and treasury data across Oracle and Alteryx workflows, improving accuracy of financial outputs and enabling clean audit 
+results   
+• Monitored daily AP-related cash activity to ensure liquidity coverage and proper classification of vendor payments   
+• Built and maintained Excel and Power BI dashboards to track financial KPIs and support ad hoc investment analysis by FP&A   
+• Collaborated with Treasury and Accounting teams to align reporting with investment controls and compliance protocols   
+• Supported quarterly and year-end audits by compiling documentation, reconciling investment activity, and preparing requested 
+schedules   
+• Conducted validation testing on Oracle OTBI investment data exports, improving end-of-month report consistency across Finance teams 
+CIT Bank N.A.   
+End of Lease Specialist III  Jacksonville, FL | 2017 – 2022   
+• Oversaw investment-backed lease terminations totaling $100M+, ensuring accurate execution and reporting of asset buyouts and sales   
+• Finalized lease-related transactions based on data reconciliation and investment P&L impact, achieving 110% performance targets   
+• Coordinated closely with custodial and accounting teams to ensure timely processing and settlement of contractual lease closings   
+• Performed root-cause analysis on financial discrepancies using SQL queries and system reports, maintaining 99.8% accuracy rate   
+• Assisted with internal control efforts by aligning billing and receivables data to external audit findings and treasury policies   
+• Supported process enhancement projects to shorten settlement cycle times and reduce late funding penalties in partnership with 
+treasury 
+EDUCATION 
+University of North Florida, Coggin College of Business   
+Bachelor of Business Administration – Finance & Financial Services  Jacksonville, FL   
+TECHNICAL SKILLS 
+Advanced: Excel (Pivot tables, VLOOKUPs, financial modeling), Alteryx (data prep and reconciliation), Power BI (dashboards)   
+Proficient: SQL (joins, filters, cash flow queries), Oracle OTBI (data extraction), Financial Reporting Systems   
+Familiar: Clearwater (conceptual knowledge), Bloomberg Terminal (read-only exposure), Reconciliation Automation Tools 
+
+===== FILE: Resume2025 v2_ATS.pdf =====
+
+
+MASIH AZIZPOUR 
+     (904) 993-9351 | masih.azizpour@gmail.com | LinkedIn: Profile 
+FINANCIAL REPORTING ANALYST – Leveraging data analytics and financial expertise 
+Financial Reporting Analyst with over 7 years of experience in business intelligence, data analytics, and workflow automation. Skilled in 
+leveraging Power BI, Alteryx, Oracle OTBI, and SQL to streamline financial reporting and deliver actionable insights. Known for optimizing 
+reporting processes, automating data workflows, and supporting strategic decision-making. Excellent communication and cross-functional 
+collaboration skills, with a proven track record in both on-premise and cloud-based financial systems. 
+PROFESSIONAL SUMMARY 
+• Skilled in analyzing and consolidating financial data, leveraging BI tools to support strategic financial objectives 
+• Experienced in automating workflows and reporting processes using Alteryx, SQL, Oracle Fusion, and Power BI 
+• Proficient in developing tailored dashboards and reports for real-time decision support 
+• Adept at gathering business requirements and translating them into technical financial reporting solutions 
+• Strong background in financial services with expertise in accounts payable optimization and data integration 
+CORE COMPETENCIES 
+• Financial Reporting & Analysis 
+• Power BI Dashboard Development 
+• Alteryx Workflow Automation 
+• SQL Query Development 
+• Data Extraction & Transformation 
+• Business Intelligence Solutions 
+• Process Improvement & Optimization 
+• Stakeholder Communication 
+• Requirements Gathering & Analysis 
+• Strategic Decision Support 
+• Financial Modeling & Forecasting 
+• Cross-Functional Collaboration  
+PROFESSIONAL EXPERIENCE 
+FIS (Fidelity Information Services) 
+Financial Reporting Analyst II  Jacksonville, FL | 2022 - 2025  
+• Designed and maintained interactive Power BI dashboards that delivered real-time visibility into Accounts Payable trends, reducing 
+manual reporting time by 40% and accelerating executive decision-making. 
+• Automated end-to-end AP data extraction, transformation, and reporting using Alteryx and SQL, cutting data processing time by 50% 
+and improving accuracy in monthly reporting cycles. 
+• Created monthly analytics packages for Tribe Leads and Product Owners covering AP activity, cash flow trends, and expense 
+performance, which informed a $2M reallocation in departmental budgets. 
+• Partnered with finance, engineering, and IT teams to integrate 5+ data sources, enhancing financial data completeness and reliability 
+across reporting platforms. 
+• Developed custom dashboards and reports in Power BI and Excel to support AP forecasting, variance analysis, and accrual tracking, 
+directly contributing to more precise month-end close processes. 
+• Streamlined AP reporting processes in cloud-based environments by implementing modular Alteryx workflows, increasing operational 
+efficiency by 30% and enabling real-time insights. 
+CIT Bank N.A 
+End of Lease Specialist III Jacksonville, FL | 2017 - 2022 
+• Oversaw a $100M+ technology and industrial equipment lease portfolio, driving a 95% client retention rate through responsive service 
+and strategic upsell opportunities. 
+• Finalized high-volume sales transactions with 110% quarterly attainment by analyzing customer usage data and aligning renewal terms 
+with business goals. 
+• Led cross-departmental issue resolution initiatives, reducing service backlog resolution time by 25% and improving interdepartmental 
+workflow efficiency. 
+• Contributed to Salesforce CRM system implementation by executing test scenarios during UAT and providing feedback that enhanced 
+system functionality for over 50 users. 
+• Performed detailed financial research to reconcile cash receipts with internal systems, maintaining a 99.8% transaction accuracy rate. 
+EDUCATION 
+University of North Florida, Coggin College of Business 
+Bachelor of Business Administration Dual Bachelors: Finance and Financial Services  Jacksonville, FL 
+TECHNICAL SKILLS 
+• Advanced (Expert Level): Power BI (Dashboard creation and visualization), Alteryx (Certified, data workflow automation), Microsoft Excel 
+(Advanced financial analysis), Financial Reporting Systems 
+• Proficient (Strong Working Knowledge): SQL (Data querying and manipulation), Hyperion (Financial consolidation and reporting), Oracle 
+OTBI (Report modeling, Analysis reports and automation), Data Extraction & Transformation (ETL processes) 
+• Familiar (Working Knowledge): Python (Beginner level, data cleansing), Cloud-Based Infrastructure (Migration planning), Business 
+Intelligence Applications (General knowledge)
