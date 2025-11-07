@@ -84,7 +84,7 @@ main {
 }
 
 ::selection {
-  background: var(--color-primary, rgba(26, 188, 156, 0.4));
+  background: var(--color-primary, rgba(139, 46, 60, 0.4));
   color: var(--color-text-primary, #ffffff);
 }
 

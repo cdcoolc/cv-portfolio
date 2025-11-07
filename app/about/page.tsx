@@ -21,12 +21,21 @@ export default function AboutPage() {
               </FadeIn>
               <Stagger>
                 <p className="text-muted">
-                  Financial Reporting and FP&A professional with 7+ years of experience in cash flow
-                  forecasting, management reporting, and business intelligence.
+                  I’m a financial analyst and data strategist with over seven years of experience transforming complex 
+                  financial data into clear, actionable insights. My career has spanned roles in financial reporting, 
+                  treasury analytics, and process automation, where I’ve built and optimized reporting systems using Alteryx, SQL, 
+                  Power BI, and Oracle Hyperion.
                 </p>
-                <p className="text-muted">
-                  Advanced in Power BI, Alteryx, Oracle ERP, SAP, and SQL. I focus on automation,
-                  accuracy, and clarity—turning complex data into actionable insights.
+                
+                <p className="text-muted mt-4">
+                  I’m passionate about bridging the gap between finance and technology—turning data challenges into streamlined, 
+                  automated solutions that enhance decision-making and efficiency. Beyond analytics, I’m deeply curious about design 
+                  and emerging technologies, constantly exploring ways to integrate AI, visualization, and user experience into 
+                  financial tools. 
+                  </p>
+                  <p className="text-muted mt-4">
+                    Whether I’m refining a liquidity model, building a Power BI dashboard, or coding a Python script 
+                  to automate workflows, my goal is always the same: to make complex information simple, useful, and impactful.
                 </p>
               </Stagger>
             </div>

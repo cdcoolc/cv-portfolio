@@ -25,7 +25,7 @@ const variantClasses: Record<ButtonVariant, string> = {
   primary:
     'border border-white/60 text-white tracking-[0.25em] uppercase bg-transparent hover:bg-white/10',
   secondary:
-    'text-white/80 hover:text-white tracking-[0.3em] uppercase underline underline-offset-8 decoration-white/40',
+    'text-white/80 hover:text-white tracking-[0.3em] uppercase btn-secondary',
   accent:
     'bg-white text-[#07895c] shadow-lg hover:bg-white/90 tracking-[0.2em] uppercase',
   icon:
@@ -48,6 +48,13 @@ export function Button({
   rel,
   ...props
 }: ButtonProps) {
+  const content =
+    variant === 'secondary' ? (
+      <span className="btn-secondary__label">{children}</span>
+    ) : (
+      children
+    );
+
   if (href) {
     return (
       <Link
@@ -55,14 +62,13 @@ export function Button({
         target={target}
         rel={rel}
         className={cx(
-          'inline-flex items-center justify-center rounded-full transition-all duration-200 will-change-transform',
-          'hover:-translate-y-0.5',
+          'inline-flex items-center justify-center rounded-full transition-all duration-200',
           variantClasses[variant],
           sizeClasses[size],
           className
         )}
       >
-        {children}
+        {content}
       </Link>
     );
   }
@@ -70,15 +76,14 @@ export function Button({
     <motion.button
       whileTap={{ scale: 0.98 }}
       className={cx(
-        'inline-flex items-center justify-center rounded-full transition-all duration-200 will-change-transform',
-        'hover:-translate-y-0.5',
+        'inline-flex items-center justify-center rounded-full transition-all duration-200',
         variantClasses[variant],
         sizeClasses[size],
         className
       )}
       {...props}
     >
-      {children}
+      {content}
     </motion.button>
   );
 }

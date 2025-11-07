@@ -6,7 +6,6 @@ import PageTransition from '../components/PageTransition';
 import ScrollManager from '../components/ScrollManager';
 import Script from 'next/script';
 import { Poppins } from 'next/font/google';
-import ThemeProvider from '../components/ThemeProvider';
 
 const poppins = Poppins({
   subsets: ['latin'],
@@ -98,10 +97,8 @@ export default function RootLayout({
             url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',
           })}
         </Script>
-        <ThemeProvider>
-          <ScrollManager />
-          <PageTransition>{children}</PageTransition>
-        </ThemeProvider>
+        <ScrollManager />
+        <PageTransition>{children}</PageTransition>
       </body>
     </html>
   );

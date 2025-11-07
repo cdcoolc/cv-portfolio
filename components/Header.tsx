@@ -2,14 +2,13 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
-import ThemeToggleButton from './ThemeToggleButton';
 
 interface HeaderProps {
   variant?: 'default' | 'card';
 }
 
 export function Header({ variant = 'default' }: HeaderProps) {
-  const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const links = [
     { href: '/about', label: 'About' },
     { href: '/skills', label: 'Skills' },
@@ -23,6 +22,16 @@ export function Header({ variant = 'default' }: HeaderProps) {
       ? 'site-header__inner'
       : 'site-header__inner site-header__inner--default';
 
+  const handleMenuOpen = () => setMenuOpen(true);
+  const handleMenuClose = () => setMenuOpen(false);
+  const handleToggleClick = () => setMenuOpen((v) => !v);
+  const handleFocusOut = (event: React.FocusEvent<HTMLDivElement>) => {
+    const nextFocus = event.relatedTarget as Node | null;
+    if (!nextFocus || !event.currentTarget.contains(nextFocus)) {
+      handleMenuClose();
+    }
+  };
+
   return (
     <header className="site-header" role="banner">
       <div className={innerClass}>
@@ -34,37 +43,47 @@ export function Header({ variant = 'default' }: HeaderProps) {
           MAS<span className="site-header__logo-dot">.</span>
         </Link>
 
-        <nav aria-label="Primary navigation" className="site-header__nav">
-          {links.map((link) => (
-            <Link key={link.href} href={link.href}>
-              {link.label}
-            </Link>
-          ))}
-        </nav>
-
-        <div className="site-header__actions">
-          <ThemeToggleButton />
-          <button
-            className="site-header__toggle md:hidden"
-            aria-label="Toggle menu"
-            aria-expanded={open}
-            onClick={() => setOpen((v) => !v)}
+        <div
+          className="site-header__nav-wrapper"
+          onMouseEnter={handleMenuOpen}
+          onMouseLeave={handleMenuClose}
+          onFocusCapture={handleMenuOpen}
+          onBlurCapture={handleFocusOut}
+        >
+          <nav
+            aria-label="Primary navigation"
+            aria-hidden={!menuOpen}
+            className={`site-header__nav ${menuOpen ? 'site-header__nav--visible' : ''}`}
           >
-            <span />
-            <span />
-            <span />
-          </button>
+            {links.map((link) => (
+              <Link key={link.href} href={link.href} tabIndex={menuOpen ? 0 : -1}>
+                {link.label}
+              </Link>
+            ))}
+          </nav>
+
+          <div className="site-header__actions">
+            <button
+              className={`site-header__toggle ${menuOpen ? 'site-header__toggle--active' : ''}`}
+              aria-label="Toggle navigation"
+              aria-expanded={menuOpen}
+              onClick={handleToggleClick}
+            >
+              <span />
+              <span />
+              <span />
+            </button>
+          </div>
         </div>
       </div>
 
-      {open && (
-        <div className="site-header__drawer" role="dialog" aria-label="Mobile navigation">
+      {menuOpen && (
+        <div className="site-header__drawer md:hidden" role="dialog" aria-label="Mobile navigation">
           {links.map((link) => (
-            <Link key={link.href} href={link.href} onClick={() => setOpen(false)}>
+            <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>
               {link.label}
             </Link>
           ))}
-          <ThemeToggleButton variant="drawer" />
         </div>
       )}
     </header>
