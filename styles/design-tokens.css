@@ -35,15 +35,34 @@
 
   /* Colors */
   --color-primary: #0fdba0;
+  --color-primary-light: #29f5be;
   --color-primary-dark: #079463;
+  --color-secondary: #ffc46b;
+  --color-accent: #f9a826;
   --color-background: linear-gradient(135deg, #028a5d 0%, #19c58f 100%);
+  --color-bg-primary: #021d1b;
+  --color-bg-secondary: #063428;
+  --color-bg-tertiary: #0b4133;
+  --color-bg-quaternary: #105340;
+  --gradient-primary: linear-gradient(135deg, #028a5d 0%, #19c58f 100%);
+  --gradient-hero: linear-gradient(165deg, #04945f 0%, #17c58f 60%, #10a86f 100%);
+  --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.12), rgba(255, 255, 255, 0));
+  --gradient-accent: linear-gradient(135deg, #0fdba0 0%, #079463 100%);
+  --gradient-overlay: linear-gradient(115deg, rgba(255, 255, 255, 0.12), transparent 45%);
   --color-text-primary: #ffffff;
   --color-text-secondary: rgba(255, 255, 255, 0.92);
   --color-text-muted: rgba(255, 255, 255, 0.75);
   --color-overlay: rgba(7, 148, 99, 0.55);
   --color-shadow: rgba(3, 41, 28, 0.5);
+  --experience-panel-bg: rgba(5, 30, 26, 0.65);
   --surface-raised: rgba(255, 255, 255, 0.04);
+  --surface-raised-hover: rgba(255, 255, 255, 0.08);
   --surface-border: rgba(255, 255, 255, 0.12);
+  --surface-border-light: rgba(255, 255, 255, 0.08);
+  --surface-border-strong: rgba(15, 219, 160, 0.25);
+  --hero-card-bg: var(--gradient-hero);
+  --header-drawer-bg: rgba(3, 44, 27, 0.85);
+  --logo-dot-color: var(--color-primary);
 
   /* Radius */
   --radius-card: 36px;
@@ -79,6 +98,38 @@
   --transition-fast: var(--dur-fast) var(--easing-standard);
   --transition-normal: var(--dur-base) var(--easing-standard);
   --transition-slow: var(--dur-slow) var(--easing-standard);
+}
+
+:root[data-theme='slate'] {
+  --color-primary: #10b981;
+  --color-primary-light: #34d399;
+  --color-primary-dark: #059669;
+  --color-secondary: #3b82f6;
+  --color-accent: #8b2e3c;
+  --color-background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  --color-bg-primary: #0f172a;
+  --color-bg-secondary: #1e293b;
+  --color-bg-tertiary: #334155;
+  --color-bg-quaternary: #475569;
+  --gradient-primary: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  --gradient-hero: linear-gradient(165deg, #1e293b 0%, #334155 60%, #475569 100%);
+  --gradient-card: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+  --gradient-accent: linear-gradient(135deg, #10b981 0%, #059669 100%);
+  --gradient-overlay: linear-gradient(115deg, rgba(16, 185, 129, 0.08), transparent 45%);
+  --color-text-primary: #ffffff;
+  --color-text-secondary: rgba(255, 255, 255, 0.92);
+  --color-text-muted: rgba(255, 255, 255, 0.75);
+  --color-overlay: rgba(30, 41, 59, 0.55);
+  --color-shadow: rgba(15, 23, 42, 0.5);
+  --experience-panel-bg: rgba(15, 23, 42, 0.72);
+  --surface-raised: rgba(255, 255, 255, 0.06);
+  --surface-raised-hover: rgba(255, 255, 255, 0.08);
+  --surface-border: rgba(16, 185, 129, 0.15);
+  --surface-border-light: rgba(255, 255, 255, 0.1);
+  --surface-border-strong: rgba(16, 185, 129, 0.3);
+  --hero-card-bg: var(--gradient-hero);
+  --header-drawer-bg: rgba(15, 23, 42, 0.92);
+  --logo-dot-color: #8b2e3c;
 }
 
 @media (max-width: 768px) {

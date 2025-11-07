@@ -2,6 +2,7 @@
 
 import React, { useState } from 'react';
 import Link from 'next/link';
+import ThemeToggleButton from './ThemeToggleButton';
 
 interface HeaderProps {
   variant?: 'default' | 'card';
@@ -41,16 +42,19 @@ export function Header({ variant = 'default' }: HeaderProps) {
           ))}
         </nav>
 
-        <button
-          className="site-header__toggle md:hidden"
-          aria-label="Toggle menu"
-          aria-expanded={open}
-          onClick={() => setOpen((v) => !v)}
-        >
-          <span />
-          <span />
-          <span />
-        </button>
+        <div className="site-header__actions">
+          <ThemeToggleButton />
+          <button
+            className="site-header__toggle md:hidden"
+            aria-label="Toggle menu"
+            aria-expanded={open}
+            onClick={() => setOpen((v) => !v)}
+          >
+            <span />
+            <span />
+            <span />
+          </button>
+        </div>
       </div>
 
       {open && (
@@ -60,6 +64,7 @@ export function Header({ variant = 'default' }: HeaderProps) {
               {link.label}
             </Link>
           ))}
+          <ThemeToggleButton variant="drawer" />
         </div>
       )}
     </header>

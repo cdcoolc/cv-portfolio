@@ -12,6 +12,8 @@ export interface ButtonProps extends MotionButtonProps {
   variant?: ButtonVariant;
   size?: ButtonSize;
   href?: string;
+  target?: string;
+  rel?: string;
   children?: React.ReactNode;
 }
 
@@ -42,12 +44,16 @@ export function Button({
   size = 'md',
   children,
   href,
+  target,
+  rel,
   ...props
 }: ButtonProps) {
   if (href) {
     return (
       <Link
         href={href}
+        target={target}
+        rel={rel}
         className={cx(
           'inline-flex items-center justify-center rounded-full transition-all duration-200 will-change-transform',
           'hover:-translate-y-0.5',

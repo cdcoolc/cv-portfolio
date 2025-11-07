@@ -25,7 +25,7 @@ export default function Page() {
                 reporting, and analytics across Power BI, Alteryx, Oracle/SAP, and SQL.
               </p>
               <div className="hero-card__cta">
-                <Button href="/resume.pdf" variant="primary">
+                <Button href="/resume.pdf" variant="primary" target="_blank" rel="noreferrer noopener">
                   Download CV
                 </Button>
                 <Button href="/about" variant="secondary">
