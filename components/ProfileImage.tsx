@@ -2,6 +2,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
+import profilePicture from '@/public/assets/profile/profile.png';
 
 export interface ProfileImageProps {
   src?: string | StaticImageData;
@@ -13,7 +14,7 @@ export interface ProfileImageProps {
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
 
 export default function ProfileImage({
-  src = '/assets/profile/profile.png',
+  src = profilePicture,
   alt = 'Profile image',
   size = 256,
   priority = false,
