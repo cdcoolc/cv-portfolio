@@ -1,4 +1,7 @@
 /** @type {import('next').NextConfig} */
+const repoName = 'cv-portfolio';
+const isGitHubPages = process.env.GITHUB_PAGES === 'true';
+
 const nextConfig = {
   reactStrictMode: true,
   compress: true,
@@ -6,6 +9,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  basePath: isGitHubPages ? `/${repoName}` : undefined,
+  assetPrefix: isGitHubPages ? `/${repoName}` : undefined,
   async headers() {
     return [
       {
