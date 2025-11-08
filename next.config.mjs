@@ -2,6 +2,10 @@
 const nextConfig = {
   reactStrictMode: true,
   compress: true,
+  output: 'export',
+  images: {
+    unoptimized: true,
+  },
   async headers() {
     return [
       {
@@ -32,4 +36,3 @@ const nextConfig = {
 };
 
 export default nextConfig;
-
