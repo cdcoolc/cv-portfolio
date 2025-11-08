@@ -6,6 +6,17 @@ import { FadeIn, Stagger } from '../../components/anim';
 import Header from '../../components/Header';
 import PageNumber from '../../components/PageNumber';
 
+const PRINCIPLES = [
+  { title: 'Clarity', desc: 'Communicate insights simply and effectively.' },
+  { title: 'Rigor', desc: 'Ground recommendations in sound analysis.' },
+  { title: 'Ownership', desc: 'Deliver outcomes end-to-end with accountability.' },
+];
+
+const CREDENTIALS = [
+  'B.B.A., Finance & Financial Services - University of North Florida',
+  'Business Owner & Operator (2014-2024)',
+];
+
 export default function AboutPage() {
   return (
     <main id="main" className="canvas">
@@ -13,45 +24,40 @@ export default function AboutPage() {
         <Header variant="card" />
         <div className="hero-card__section">
           <Section title="About Me" subtitle="Who I Am" variant="plain">
-            <div className="grid grid-cols-1 md:grid-cols-[0.3fr_0.7fr] gap-10 items-start">
+            <div className="grid grid-cols-1 items-start gap-8 md:grid-cols-[0.3fr_0.7fr]">
               <FadeIn>
                 <div className="flex justify-center md:justify-start">
                   <ProfileImage size={200} />
                 </div>
               </FadeIn>
               <Stagger>
-                <p className="text-muted">
-                  I’m a financial analyst and data strategist with over seven years of experience transforming complex 
-                  financial data into clear, actionable insights. My career has spanned roles in financial reporting, 
-                  treasury analytics, and process automation, where I’ve built and optimized reporting systems using Alteryx, SQL, 
-                  Power BI, and Oracle Hyperion.
-                </p>
-                
-                <p className="text-muted mt-4">
-                  I’m passionate about bridging the gap between finance and technology—turning data challenges into streamlined, 
-                  automated solutions that enhance decision-making and efficiency. Beyond analytics, I’m deeply curious about design 
-                  and emerging technologies, constantly exploring ways to integrate AI, visualization, and user experience into 
-                  financial tools. 
+                <div className="max-w-[72ch] space-y-6 text-muted leading-relaxed">
+                  <p>
+                    I&apos;m a financial analyst and data strategist with seven-plus years of experience translating complex
+                    financial data into clear, actionable insights. My work spans financial reporting, treasury analytics, and
+                    process automation where I build and optimize reporting systems with Alteryx, SQL, Power BI, and Oracle Hyperion.
                   </p>
-                  <p className="text-muted mt-4">
-                    Whether I’m refining a liquidity model, building a Power BI dashboard, or coding a Python script 
-                  to automate workflows, my goal is always the same: to make complex information simple, useful, and impactful.
-                </p>
+                  <p>
+                    I&apos;m passionate about bridging the gap between finance and technology&mdash;turning ambiguous data sets into
+                    streamlined, automated workflows that level up decision-making. I stay curious about design and emerging tech,
+                    exploring ways to fold AI, visualization, and UX patterns into financial tools.
+                  </p>
+                  <p>
+                    Whether I&apos;m refining a liquidity model, building a Power BI dashboard, or scripting Python automations, my
+                    goal stays the same: make complex information simple, useful, and impactful.
+                  </p>
+                </div>
               </Stagger>
             </div>
 
             <div className="mt-12">
-              <h3 className="text-xl font-semibold">Values & Principles</h3>
-              <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-                {[
-                  { title: 'Clarity', desc: 'Communicate insights simply and effectively.' },
-                  { title: 'Rigor', desc: 'Ground recommendations in sound analysis.' },
-                  { title: 'Ownership', desc: 'Deliver outcomes end-to-end with accountability.' },
-                ].map((v) => (
-                  <FadeIn key={v.title}>
-                    <Card className="p-5">
-                      <h4 className="font-medium">{v.title}</h4>
-                      <p className="mt-2 text-muted text-sm">{v.desc}</p>
+              <h3 className="text-xl font-semibold">Values &amp; Principles</h3>
+              <div className="mt-6 grid grid-cols-1 gap-6 md:grid-cols-3">
+                {PRINCIPLES.map((principle) => (
+                  <FadeIn key={principle.title}>
+                    <Card className="p-4 md:p-6">
+                      <h4 className="font-medium">{principle.title}</h4>
+                      <p className="mt-2 text-sm text-muted">{principle.desc}</p>
                     </Card>
                   </FadeIn>
                 ))}
@@ -61,8 +67,9 @@ export default function AboutPage() {
             <div className="mt-12">
               <h3 className="text-xl font-semibold">Credentials</h3>
               <ul className="mt-4 space-y-2 text-muted">
-                <li>• B.B.A., Dual Major: Finance and Financial Services — University of North Florida</li>
-                <li>• Business Owner & Operator (2014—2024)</li>
+                {CREDENTIALS.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
               </ul>
             </div>
           </Section>

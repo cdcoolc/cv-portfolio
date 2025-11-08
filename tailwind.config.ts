@@ -17,6 +17,9 @@ const config: Config = {
         primary: 'var(--color-primary)',
         secondary: 'var(--color-secondary)',
         accent: 'var(--color-accent)',
+        contrast: 'var(--color-contrast)',
+        success: 'var(--color-success)',
+        warning: 'var(--color-warning)',
       },
       boxShadow: {
         sm: 'var(--shadow-sm)',
@@ -39,4 +42,3 @@ const config: Config = {
 };
 
 export default config;
-

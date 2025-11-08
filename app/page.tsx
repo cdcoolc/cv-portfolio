@@ -7,19 +7,23 @@ import { FadeIn, Stagger } from '../components/anim';
 
 export default function Page() {
   return (
-    <main id="main" className="canvas">
-  <section className="hero-card mt-20 md:mt-24 lg:mt-32" aria-label="Hero">
+    <main id="main" className="canvas canvas--home">
+      <section className="hero-card" aria-label="Hero">
         <Header variant="card" />
         <div className="hero-card__grid">
           <div className="hero-card__content">
             <Stagger>
               <p className="hero-card__eyebrow">Financial Reporting &amp; FP&amp;A</p>
-              <h1 className="hero-card__title">
-                Masih
-                <br />
-                Azizpour
-              </h1>
-              <p className="hero-card__subtitle">I&apos;m a Finance Partner</p>
+              <div className="hero-card__title-block">
+                <h1 className="hero-card__title" aria-label="Masih Azizpour">
+                  <span className="hero-card__title-line">Masih</span>
+                  <span className="hero-card__title-line">Azizpour</span>
+                </h1>
+                <div className="hero-card__subtitle">
+                  <span>I&apos;m a Finance Partner</span>
+                  <span className="hero-card__subtitle-rule" aria-hidden />
+                </div>
+              </div>
               <p className="hero-card__description">
                 I help leadership teams translate raw data into confident, forward-looking decisions. Forecasting,
                 reporting, and analytics across Power BI, Alteryx, Oracle/SAP, and SQL.
