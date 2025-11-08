@@ -38,6 +38,9 @@ const sizeClasses: Record<ButtonSize, string> = {
   lg: 'h-12 px-8 text-base',
 };
 
+const focusRing =
+  'focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/60';
+
 export function Button({
   className,
   variant = 'primary',
@@ -63,6 +66,7 @@ export function Button({
         rel={rel}
         className={cx(
           'inline-flex items-center justify-center rounded-full transition-all duration-200',
+          focusRing,
           variantClasses[variant],
           sizeClasses[size],
           className
@@ -77,6 +81,7 @@ export function Button({
       whileTap={{ scale: 0.98 }}
       className={cx(
         'inline-flex items-center justify-center rounded-full transition-all duration-200',
+        focusRing,
         variantClasses[variant],
         sizeClasses[size],
         className

@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { motion } from 'framer-motion';
+import { motion, useReducedMotion } from 'framer-motion';
 import Image, { StaticImageData } from 'next/image';
 import profilePicture from '@/public/assets/profile/profile.png';
 
@@ -19,17 +19,28 @@ export default function ProfileImage({
   size = 256,
   priority = false,
 }: ProfileImageProps) {
+  const prefersReducedMotion = useReducedMotion();
   const dim = `${size}px`;
   const resolvedSrc =
     typeof src === 'string' && src.startsWith('/')
       ? `${basePath}${src}`
       : src;
+  const containerStyle: React.CSSProperties = {
+    maxWidth: dim,
+    maxHeight: dim,
+    width: '100%',
+  };
+  const animationProps = prefersReducedMotion
+    ? {}
+    : {
+        animate: { y: [0, -6, 0] },
+        transition: { duration: 4, repeat: Infinity, ease: 'easeInOut' },
+      };
   return (
     <motion.div
-      className="relative"
-      style={{ width: dim, height: dim }}
-      animate={{ y: [0, -6, 0] }}
-      transition={{ duration: 4, repeat: Infinity, ease: 'easeInOut' }}
+      className="relative mx-auto aspect-square w-full"
+      style={containerStyle}
+      {...animationProps}
     >
       {/* Glow */}
       <div
@@ -46,7 +57,7 @@ export default function ProfileImage({
             src={resolvedSrc}
             alt={alt}
             fill
-            sizes="(max-width: 768px) 70vw, 320px"
+            sizes="(max-width: 40rem) 70vw, (max-width: 64rem) 35vw, 20rem"
             priority={priority}
             loading={priority ? undefined : 'lazy'}
             className="object-cover"

@@ -57,6 +57,7 @@ export const metadata: Metadata = {
 export const viewport: Viewport = {
   width: 'device-width',
   initialScale: 1,
+  viewportFit: 'cover',
   themeColor: '#070a0f',
 };
 
@@ -66,8 +67,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${poppins.variable} min-h-screen bg-bg text-text antialiased`}>
+    <html lang="en" className="h-full scroll-smooth">
+      <body
+        className={`${poppins.variable} min-h-dvh bg-bg text-text antialiased selection:bg-white/20 selection:text-bg overflow-x-hidden`}
+      >
         {/* Skip link for keyboard users */}
         <a
           href="#main"

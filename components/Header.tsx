@@ -8,7 +8,7 @@ interface HeaderProps {
 }
 
 export function Header({ variant = 'default' }: HeaderProps) {
-  const [menuOpen, setMenuOpen] = useState(false);
+  const [isDrawerOpen, setIsDrawerOpen] = useState(false);
   const links = [
     { href: '/about', label: 'About' },
     { href: '/skills', label: 'Skills' },
@@ -22,41 +22,35 @@ export function Header({ variant = 'default' }: HeaderProps) {
       ? 'site-header__inner'
       : 'site-header__inner site-header__inner--default';
 
-  const handleMenuOpen = () => setMenuOpen(true);
-  const handleMenuClose = () => setMenuOpen(false);
-  const handleToggleClick = () => setMenuOpen((v) => !v);
-  const handleFocusOut = (event: React.FocusEvent<HTMLDivElement>) => {
-    const nextFocus = event.relatedTarget as Node | null;
-    if (!nextFocus || !event.currentTarget.contains(nextFocus)) {
-      handleMenuClose();
-    }
-  };
+  const navLinkClasses =
+    'rounded-full px-2 py-1 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/60';
+
+  const handleDrawerToggle = () => setIsDrawerOpen((open) => !open);
+  const handleDrawerClose = () => setIsDrawerOpen(false);
 
   return (
     <header className="site-header" role="banner">
       <div className={innerClass}>
         <Link
           href="/"
-          className="site-header__logo"
+          className="site-header__logo focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-white/60"
           aria-label="Masih Azizpour home"
         >
           MAS<span className="site-header__logo-dot">.</span>
         </Link>
 
-        <div
-          className="site-header__nav-wrapper"
-          onMouseEnter={handleMenuOpen}
-          onMouseLeave={handleMenuClose}
-          onFocusCapture={handleMenuOpen}
-          onBlurCapture={handleFocusOut}
-        >
+        <div className="site-header__nav-wrapper">
           <nav
             aria-label="Primary navigation"
-            aria-hidden={!menuOpen}
-            className={`site-header__nav ${menuOpen ? 'site-header__nav--visible' : ''}`}
+            className="site-header__nav site-header__nav--visible"
           >
             {links.map((link) => (
-              <Link key={link.href} href={link.href} tabIndex={menuOpen ? 0 : -1}>
+              <Link
+                key={link.href}
+                href={link.href}
+                className={navLinkClasses}
+                onClick={handleDrawerClose}
+              >
                 {link.label}
               </Link>
             ))}
@@ -64,23 +58,44 @@ export function Header({ variant = 'default' }: HeaderProps) {
 
           <div className="site-header__actions">
             <button
-              className={`site-header__toggle ${menuOpen ? 'site-header__toggle--active' : ''}`}
-              aria-label="Toggle navigation"
-              aria-expanded={menuOpen}
-              onClick={handleToggleClick}
+              type="button"
+              className={`site-header__toggle focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white/60 ${
+                isDrawerOpen ? 'site-header__toggle--active' : ''
+              }`}
+              aria-label={isDrawerOpen ? 'Close navigation menu' : 'Open navigation menu'}
+              aria-expanded={isDrawerOpen}
+              aria-controls="mobile-nav-drawer"
+              onClick={handleDrawerToggle}
+              data-state={isDrawerOpen ? 'open' : 'closed'}
             >
-              <span />
-              <span />
-              <span />
+              <span className="sr-only">
+                {isDrawerOpen ? 'Close menu' : 'Open menu'}
+              </span>
+              <span className="site-header__toggle-icon" aria-hidden="true">
+                <span />
+                <span />
+                <span />
+              </span>
             </button>
           </div>
         </div>
       </div>
 
-      {menuOpen && (
-        <div className="site-header__drawer md:hidden" role="dialog" aria-label="Mobile navigation">
+      {isDrawerOpen && (
+        <div
+          id="mobile-nav-drawer"
+          className="site-header__drawer md:hidden"
+          role="dialog"
+          aria-modal="true"
+          aria-label="Mobile navigation"
+        >
           {links.map((link) => (
-            <Link key={link.href} href={link.href} onClick={() => setMenuOpen(false)}>
+            <Link
+              key={link.href}
+              href={link.href}
+              className={navLinkClasses}
+              onClick={handleDrawerClose}
+            >
               {link.label}
             </Link>
           ))}

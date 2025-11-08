@@ -145,6 +145,10 @@
   --radius-card: 2.25rem;
   --radius-pill: 999px;
   --color-surface: var(--surface-raised);
+  --safe-area-top: env(safe-area-inset-top, 0px);
+  --safe-area-bottom: env(safe-area-inset-bottom, 0px);
+  --safe-area-left: env(safe-area-inset-left, 0px);
+  --safe-area-right: env(safe-area-inset-right, 0px);
 }
 
 :root {
@@ -177,7 +181,7 @@
   --spacing-xl: var(--space-10);
 }
 
-@media (max-width: 768px) {
+@media (max-width: 48rem) {
   :root {
     --gutter: clamp(1rem, 6vw, 2.5rem);
     --header-h: 3.75rem;
