@@ -9,6 +9,9 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGitHubPages ? `/${repoName}` : '',
+  },
   basePath: isGitHubPages ? `/${repoName}` : undefined,
   assetPrefix: isGitHubPages ? `/${repoName}` : undefined,
   async headers() {

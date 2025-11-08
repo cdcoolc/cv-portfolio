@@ -10,6 +10,8 @@ export interface ProfileImageProps {
   priority?: boolean;
 }
 
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '';
+
 export default function ProfileImage({
   src = '/assets/profile/profile.png',
   alt = 'Profile image',
@@ -17,6 +19,10 @@ export default function ProfileImage({
   priority = false,
 }: ProfileImageProps) {
   const dim = `${size}px`;
+  const resolvedSrc =
+    typeof src === 'string' && src.startsWith('/')
+      ? `${basePath}${src}`
+      : src;
   return (
     <motion.div
       className="relative"
@@ -36,7 +42,7 @@ export default function ProfileImage({
       {src ? (
         <div className="relative z-10 h-full w-full rounded-full overflow-hidden">
           <Image
-            src={src}
+            src={resolvedSrc}
             alt={alt}
             fill
             sizes="(max-width: 768px) 70vw, 320px"
