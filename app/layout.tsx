@@ -1,9 +1,9 @@
-import '../styles/design-tokens.css';
-import '../styles/base.css';
-import '../styles/globals.css';
+import '@/styles/design-tokens.css';
+import '@/styles/base.css';
+import '@/styles/globals.css';
 import type { Metadata, Viewport } from 'next';
-import PageTransition from '../components/PageTransition';
-import ScrollManager from '../components/ScrollManager';
+import PageTransition from '@/components/PageTransition';
+import ScrollManager from '@/components/ScrollManager';
 import Script from 'next/script';
 import { Poppins } from 'next/font/google';
 
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
   description:
     'Financial Reporting & FP&A professional — forecasting, reporting, and analytics. Power BI, Alteryx, SQL, Oracle/SAP.',
   applicationName: 'Masih Azizpour Portfolio',
-  authors: [{ name: 'Masih Azizpour', url: 'https://www.linkedin.com/in/masih-azizpour' }],
+  authors: [{ name: 'Masih Azizpour', url: 'https://www.linkedin.com/in/masih-a-717b55145' }],
   keywords: [
     'FP&A',
     'Financial Reporting',
@@ -91,7 +91,7 @@ export default function RootLayout({
               addressCountry: 'US',
             },
             sameAs: [
-              'https://www.linkedin.com/in/masih-azizpour',
+              'https://www.linkedin.com/in/masih-a-717b55145',
               'mailto:masih.azizpour@gmail.com',
             ],
             url: process.env.NEXT_PUBLIC_SITE_URL || 'http://localhost:3000',

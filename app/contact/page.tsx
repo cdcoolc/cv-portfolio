@@ -1,10 +1,10 @@
 'use client';
 import React, { useState } from 'react';
-import Button from '../../components/Button';
-import Card from '../../components/Card';
-import { FadeIn, Stagger } from '../../components/anim';
-import Header from '../../components/Header';
-import PageNumber from '../../components/PageNumber';
+import Button from '@/components/Button';
+import Card from '@/components/Card';
+import { FadeIn, Stagger } from '@/components/anim';
+import Header from '@/components/Header';
+import PageNumber from '@/components/PageNumber';
 
 type FormField = 'name' | 'email' | 'subject' | 'message';
 

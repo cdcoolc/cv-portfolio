@@ -1,10 +1,10 @@
 import React from 'react';
-import Section from '../../components/Section';
-import ProfileImage from '../../components/ProfileImage';
-import Card from '../../components/Card';
-import { FadeIn, Stagger } from '../../components/anim';
-import Header from '../../components/Header';
-import PageNumber from '../../components/PageNumber';
+import Section from '@/components/Section';
+import ProfileImage from '@/components/ProfileImage';
+import Card from '@/components/Card';
+import { FadeIn, Stagger } from '@/components/anim';
+import Header from '@/components/Header';
+import PageNumber from '@/components/PageNumber';
 
 const PRINCIPLES = [
   { title: 'Clarity', desc: 'Communicate insights simply and effectively.' },

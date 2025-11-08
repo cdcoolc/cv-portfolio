@@ -1,10 +1,10 @@
 import React from 'react';
-import Section from '../../components/Section';
-import Card from '../../components/Card';
-import Button from '../../components/Button';
-import { FadeIn } from '../../components/anim';
-import Header from '../../components/Header';
-import PageNumber from '../../components/PageNumber';
+import Section from '@/components/Section';
+import Card from '@/components/Card';
+import Button from '@/components/Button';
+import { FadeIn } from '@/components/anim';
+import Header from '@/components/Header';
+import PageNumber from '@/components/PageNumber';
 
 interface ProjectVisual {
   gradient: string;

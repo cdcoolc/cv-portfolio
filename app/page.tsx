@@ -1,9 +1,9 @@
 import React from 'react';
-import Header from '../components/Header';
-import Button from '../components/Button';
-import ProfileImage from '../components/ProfileImage';
-import Footer from '../components/Footer';
-import { FadeIn, Stagger } from '../components/anim';
+import Header from '@/components/Header';
+import Button from '@/components/Button';
+import ProfileImage from '@/components/ProfileImage';
+import Footer from '@/components/Footer';
+import { FadeIn, Stagger } from '@/components/anim';
 
 export default function Page() {
   return (

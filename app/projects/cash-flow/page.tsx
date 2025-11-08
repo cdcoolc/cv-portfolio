@@ -1,11 +1,11 @@
 'use client';
 
 import React, { useState } from 'react';
-import Header from '../../../components/Header';
-import CasePageNumber from '../../../components/CasePageNumber';
-import Section from '../../../components/Section';
-import Button from '../../../components/Button';
-import { FadeIn } from '../../../components/anim';
+import Header from '@/components/Header';
+import CasePageNumber from '@/components/CasePageNumber';
+import Section from '@/components/Section';
+import Button from '@/components/Button';
+import { FadeIn } from '@/components/anim';
 import {
   DollarSign,
   Target,

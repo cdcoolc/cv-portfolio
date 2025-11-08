@@ -1,7 +1,7 @@
-import Section from '../../components/Section';
-import Header from '../../components/Header';
-import PageNumber from '../../components/PageNumber';
-import ExperienceShowcase, { type ExperienceEntry } from '../../components/ExperienceShowcase';
+import Section from '@/components/Section';
+import Header from '@/components/Header';
+import PageNumber from '@/components/PageNumber';
+import ExperienceShowcase, { type ExperienceEntry } from '@/components/ExperienceShowcase';
 
 const experienceItems: ExperienceEntry[] = [
   {

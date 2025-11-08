@@ -11,7 +11,7 @@ const socials = [
   },
   {
     icon: Linkedin,
-    href: 'https://www.linkedin.com/in/masih-azizpour',
+    href: 'https://www.linkedin.com/in/masih-a-717b55145',
     label: 'LinkedIn',
   },
   {

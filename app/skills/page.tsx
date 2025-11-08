@@ -1,8 +1,8 @@
 import React from 'react';
-import Section from '../../components/Section';
-import Header from '../../components/Header';
-import PageNumber from '../../components/PageNumber';
-import SkillsExplorer, { SkillCategory } from '../../components/SkillsExplorer';
+import Section from '@/components/Section';
+import Header from '@/components/Header';
+import PageNumber from '@/components/PageNumber';
+import SkillsExplorer, { SkillCategory } from '@/components/SkillsExplorer';
 
 const categories: SkillCategory[] = [
   {
